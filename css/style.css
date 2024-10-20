@@ -1,54 +1,243 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;/*will make everything the width and height I made it */
 }
 body {
-  background-color: gray;
+  background-color: beige;
   margin:0;
   padding:0;
-  overflow-y:hidden;
+  overflow-y:hidden;/*hides the verticle scroll bar*/
 }
-text-box{
-  background:white;
-  padding:0px;
-  box-sizing:border-box;
-  float:left; 
+h2{ /*clickable headings on the home page*/
+  width:100%;
+  background-color:black;
+  opacity:100%;
+  margin:560px 0px 0px 0px; 
+  text-align:center;
+  font-family:cursive;
+  font-size:2vw; 
+  color:blue;
 }
-.container{
-  width:100vw;
-  height:100vh;
+h2:hover{
+  color:cyan;
+}
+.container { /*layout of the main home page*/
+  width:100%;
+  height:100%;
   background-color: beige;
   display:grid;
-  grid-template-columns:20vw 20vw 20vw 20vw 20vw 20vw 20vw 20vw 20vw 20vw;
+  grid-template-columns:20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
   grid-template-rows:100vh;
-  pointer-events: none;
 }  
+.container-alt{ /*layout of country page*/
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns:123.1vh 80vh;
+  grid-template-rows:100vh;
+}
+.container-body-text {
+  margin
+}
+.container
+a {
+  text-decoration: none;
+}
 .item1{
-  
+  background-image: url("../images/la-sagrada-familia.png");
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item1:hover{
+  filter:brightness(105%);
 }
 .item2{
- 
+ background-image: url("../images/colosseum.png");
+ opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item2:hover{
+  filter:brightness(105%);
 }
 .item3{
- 
+  background-image: url("../images/pyramid.png");
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item3:hover{
+  filter:brightness(105%);
 }
 .item4{
-  
+  background-image: url("../images/machu-picchu.png");
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item4:hover{
+  filter:brightness(105%);
 }
 .item5{
-   
+ background-image: url("../images/the-acropolis-of-athens.png"); 
+ opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item5:hover{
+  filter:brightness(105%);
 }
 .item6{
-  
+  background-image: url("../images/christ-the-redeemer.png");
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);}
+.item6:hover{
+  filter:brightness(105%);
 }
 .item7{
-  
+  background-image: url("../images/taj-mahal.png");
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item7:hover{
+  filter:brightness(105%);
 }
 .item8{
-  
+  background-image: url("../images/angkor-wat.png");
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item8:hover{
+  filter:brightness(105%);
 }
 .item9{
-   
+ background-image: url("../images/great-wall-of-china.png");  
+ opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item9:hover{
+  filter:brightness(105%);
 }
 .item10{
-   
+ background-image: url("../images/mount-rushmore.png");  
+ opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item10:hover{
+  filter:brightness(105%);
+}
+
+
+@media screen and (max-width: 390px)/*media query for phones*/
+{
+
+body {
+  overflow-y:visible;/*hides the verticle scroll bar*/
+}
+h2{
+  margin:278px 0px 0px 0px; 
+  font-size:8vw; 
+}
+ .container { /*layout of the homepage on mobile devices*/
+  width:100%;
+  height:auto;
+  grid-template-columns:100%;
+  grid-template-rows:50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+}  
+.container-alt{ /*layout of country page on seen on mobile devices*/
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns:100vh;
+  grid-template-rows:50vh 50vh;
+}
+.item1{
+  background-image: url(../images/la-sagrada-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+ .item2{
+  background-image: url(../images/colosseum-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item3{
+  background-image: url(../images/pyramid-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item4{
+  background-image: url(../images/machu-picchu-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item5{ 
+  background-image: url(../images/acropolis-of-athens-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item6{ 
+  background-image: url(../images/christ-the-redeemer-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item7{ 
+  background-image: url(../images/taj-mahal-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item8{ 
+  background-image: url(../images/angkor-wat-small.png);
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item9{ 
+  background-image: url(../images/great-wall-of-china-small.png);
+  opacity:1;;
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
+}
+.item10{ 
+  background-image: url(../images/mount-rushmore-small.png);
+  opacity:1;;
+  opacity:1;
+  max-width:100%;
+  height:auto;
+  filter: brightness(90%);
 }
