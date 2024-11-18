@@ -5,7 +5,7 @@ body {
   background-color: beige;
   margin:0;
   padding:0;
-  overflow-y:hidden;/*hides the verticle scroll bar*/
+  overflow-y: hidden; /* Optional, to hide vertical scroll */
 }
 h2{ /*clickable headings on the home page*/
   width:100%;
@@ -21,22 +21,12 @@ h2:hover{
   color:cyan;
 }
 .container { /*layout of the main home page*/
-  width:100%;
-  height:100%;
+  width:200vh;
+  height:100vh;
   background-color: beige;
   display:grid;
   grid-template-columns:20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
   grid-template-rows:100vh;
-}  
-.container-alt{ /*layout of country page*/
-  width:100%;
-  height:100%;
-  display:grid;
-  grid-template-columns:123.1vh 80vh;
-  grid-template-rows:100vh;
-}
-.container-body-text {
-  margin
 }
 .container
 a {
@@ -144,9 +134,89 @@ a {
 .item10:hover{
   filter:brightness(105%);
 }
+                      /*----------- css for country pages: desktop -----------*/
+.container-alt{
+  width:100vw;
+  height:100vh;
+}
+nav{
+  padding:5px 20px 0px 20px;
+  width:100vw;
+  height:40px;
+  background-color:gray;
+  float:left;
+}
+nav a {
+  text-decoration: none;
+}
+h3{
+  padding:10px 0px 0px 0px;
+  margin:0px;
+  text-align:center;
+  font-family:cursive;
+  font-size:3vh; 
+  color:blue;
+}
+h4{
+  font-size:2vh;
+  margin:0px;
+  font-family:cursive;
+  display:inline;
+}
+h5{
+  font-size:22px;
+  margin:0px;
+  font-family:cursive;
+  display:inline;
+}
+p{ /*body text*/
+  margin:0px;
+  font-size:21px;
+  font-family:arial;
+
+  padding:27.5px 5px 27.5px 5px;
+}
+.left-arrow{
+  padding:0px 0px 4px 0px;  
+  height:40px;
+  float:left;
+  display:inline;
+}
+.homepage-button{ /*home button class*/
+  margin: 0px 0px 0px 964px;
+  display:inline;
+}
+.right-arrow{
+  height:1vh;
+  float:right;
+  margin:0px 0px 3px 0px;
+  display:inline;
+}
+.item1-image-body {			/*box for the image on the pages*/
+  background-image:url(../images/cmb_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.item-body{
+  background-color:beige;
+  width:670px;
+  height:800px;
+  border:3px solid black;
+  margin: 40px;
+  float:left;
+  padding:10px;
+}
+.pageimg
+{
+	max-width:100%;
+	height:auto;
+}
 
 
-@media screen and (max-width: 390px)/*media query for phones*/
+@media screen and (max-width: 390px)          /* ----------media query for phones----------*/
 {
 
 body {
@@ -162,13 +232,6 @@ h2{
   grid-template-columns:100%;
   grid-template-rows:50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
 }  
-.container-alt{ /*layout of country page on seen on mobile devices*/
-  width:100%;
-  height:100%;
-  display:grid;
-  grid-template-columns:100vh;
-  grid-template-rows:50vh 50vh;
-}
 .item1{
   background-image: url(../images/la-sagrada-small.png);
   opacity:1;
@@ -240,4 +303,79 @@ h2{
   max-width:100%;
   height:auto;
   filter: brightness(90%);
+}
+/*layout for country page - responsive*/
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+.container-alt{
+  width:100vw;
+  height:auto;
+}
+nav{
+  padding:0px;
+  width:100vw;
+  height:3vh;
+  float:left;
+}
+nav a {
+  text-decoration: none;
+}
+h3{
+  padding:10px 0px 0px 0px;
+  margin:0px;
+  text-align:center;
+  font-family:cursive;
+  font-size:3vh; 
+  color:blue;
+}
+h4{
+  font-size:2vh;
+  margin:0px;
+  font-family:cursive;
+  display:inline;
+}
+h5{
+  font-size:2vh;
+  margin:0px;
+  font-family:cursive;
+  display:inline;
+}
+p{ /*body text*/
+  margin:0px;
+  font-size:2vh;
+  font-family:arial;
+  padding:17.5px 5px 17.5px 5px;
+}
+.left-arrow{
+  padding:0px 0px 4px 0px;  
+  height:40px;
+  float:left;
+}
+.homepage-button{ /*home button class*/
+  margin: 0px 0px 0px 100px;
+  display:inline;
+}
+.right-arrow{
+  height:1vh;
+  float:right;
+  margin:0px 0px 3px 0px;
+  display:inline;
+}
+.item1-image-body { 	/*box for the image on the pages*/
+  border:3px solid black;
+  margin:4px;
+   width:98vw;
+  height:472px;
+  float:left;
+  background-image: url("../images/angkor-wat-small.png");
+}
+.item-body{
+  width:98vw;
+  height:auto;
+  border:3px solid black;
+  margin:4px;
+  float:centre;
+  padding:3px;
 }
