@@ -192,8 +192,80 @@ p{ /*body text*/
   margin:0px 0px 3px 0px;
   display:inline;
 }
-.item1-image-body {			/*box for the image on the pages*/
+.spn-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/spn-img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.itl-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/itl_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.egy-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/egy_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.pru-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/pru_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.gre-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/gre_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.brl-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/brl_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.ind-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/ind_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.cmb-image-body {			/*box for the image on the pages*/
   background-image:url(../images/cmb_img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.chn-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/chn-img.png);
+  border:3px solid black;
+  margin:40px;
+  width:1026px;
+  height:800px;
+  float:left;
+}
+.usa-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/usa_img.png);
   border:3px solid black;
   margin:40px;
   width:1026px;
@@ -363,19 +435,91 @@ p{ /*body text*/
   margin:0px 0px 3px 0px;
   display:inline;
 }
-.item1-image-body { 	/*box for the image on the pages*/
+.spn-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/la-sagrada-small.png);
   border:3px solid black;
   margin:4px;
-   width:98vw;
+  width:98vw;
+  height:472px;
+  float:left;
+}
+.itl-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/colosseum-small.png);
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
+}
+.egy-image-body {   /*box for the image on the pages*/
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
+  background-image: url("../images/pyramid-smaLL.png");
+}
+.pru-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/machu-picchu-small.png);
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
+}
+.gre-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/acropolis-of-athens-small.png);
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
+}
+.brl-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/christ-the-redeemer-small.png);
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
+}
+.ind-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/taj-mahal-small.png);
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
+}
+.cmb-image-body {   /*box for the image on the pages*/
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
   height:472px;
   float:left;
   background-image: url("../images/angkor-wat-small.png");
+}
+.chn-image-body {     /*box for the image on the pages*/
+  background-image:url("../images/great-wall-of-china-small.png");
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
+}
+.usa-image-body {     /*box for the image on the pages*/
+  background-image:url(../images/mount-rushmore-small.png);
+  border:3px solid black;
+  margin:4px;
+  width:98vw;
+  height:472px;
+  float:left;
 }
 .item-body{
   width:98vw;
   height:auto;
   border:3px solid black;
   margin:4px;
-  float:centre;
   padding:3px;
+}
 }
